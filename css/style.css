@@ -24,23 +24,23 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-nav>h3{
+.nav-title{
     font-size: 24px;
 }
-nav>ul{
+.nav-menu ul{
     display: flex;
 }
-nav>ul>li{
+.nav-menu ul li{
     list-style: none;
     margin-left: 30px;
 }
-nav>ul>li>a{
+.nav-menu ul li a{
     text-decoration: none;
     color: black;
     font-weight: 500;
     transition: 0.4s;
 }
-nav>ul>li>a:hover{
+.nav-menu ul li a:hover{
     color: tomato;
 }
 
@@ -83,8 +83,10 @@ banner section start
     background-image: url('../images/Circle\ design.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 96%;
-    overflow: hidden;
+    background-size: contain;
+}
+.banner-img img{
+    width: 100%;
 }
 .banner-img:hover{
     transform: scale(1.3);
@@ -124,6 +126,7 @@ popular collection start
     grid-gap: 30px;
 }
 .popular-card{
+    width: 300px;
     box-shadow: 10px 10px 15px 20px#e9e6e6;
     padding: 15px;
     border-radius: 5px;
@@ -244,4 +247,118 @@ footer p{
 }
 .footer-icons>ul>li>a:hover{
     color: tomato;
+}
+
+
+/*-------------------------------------
+Media Query for Mobile devices
+----------------------------------------*/
+
+@media only screen and (max-width: 688px){
+    header, main{
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #banner{
+        display: grid;
+        grid-template-rows: repeat(1fr 1fr);
+        grid-gap: 80px;
+    }
+    #banner>article{
+        width: 95%;
+        text-align: center;
+    }
+    #banner button{
+        margin: 0 auto;
+    }
+    .banner-img:hover{
+        transform: rotate(360deg);
+        transition: 2s ease-in-out;
+    }
+    #logo{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+    }
+    .popular-cards{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .popular-card{
+        margin-left: 30px;
+    }
+     .popular-btn{
+        text-align: center;
+    }
+    #traffic-method h1,  .method-card{
+        width: 80%;
+    }
+    .method-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/*-------------------------------------
+Media Query for Ipad
+----------------------------------------*/
+
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    header, main{
+        width: 100%;
+    }
+    nav{
+        align-items: center;
+        margin: 0 20px;
+    }
+    .nav-menu ul li{
+        margin-left: 15px;
+    }
+    #banner{
+        display: grid;
+        grid-template-rows: repeat(1fr 1fr);
+        grid-gap: 80px;
+    }
+    #banner>article{
+        width: 95%;
+        text-align: center;
+    }
+    #banner button{
+        margin: 0 auto;
+    }
+    .banner-img:hover{
+        transform: rotate(360deg);
+        transition: 2s ease-in-out;
+    }
+    #logo{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px 0px 20px 70px;
+    }
+    .popular-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+    .popular-card{
+        margin-left: 10%;
+    }
+     .popular-btn{
+        text-align: center;
+    }
+    #traffic-method h1,  .method-card{
+        width: 80%;
+    }
+    .method-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
