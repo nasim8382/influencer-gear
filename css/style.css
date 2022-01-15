@@ -126,6 +126,13 @@ popular collection start
     color: #FB8200;
     font-size: 12px;
 }
-#popular-btn{
+.popular-btn{
     text-align: right;
+    margin-top: 50px;
+    color: rgba(224, 44, 109, 0.87);
+}
+.popular-btn a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
 }
