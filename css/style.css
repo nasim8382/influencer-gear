@@ -5,6 +5,11 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+main{
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*----------------
 nav style start 
@@ -33,6 +38,10 @@ nav>ul>li>a{
     text-decoration: none;
     color: black;
     font-weight: 500;
+    transition: 0.4s;
+}
+nav>ul>li>a:hover{
+    color: tomato;
 }
 
 /*----------------
@@ -40,7 +49,7 @@ banner section start
 ------------------*/
 #banner{
     display: flex;
-    margin-top: 100px;
+    margin: 80px 0;
     justify-content: space-between;
 }
 #banner>article{
@@ -62,6 +71,10 @@ banner section start
     color: white;
     font-weight: 700;
     border: none;
+    transition: 0.3s;
+}
+#banner button:hover{
+    background-color: tomato;
 }
 .btn-icon-right-arrow{
     margin-left: 8px;
@@ -71,6 +84,26 @@ banner section start
     background-position: center;
     background-repeat: no-repeat;
     background-size: 96%;
+    overflow: hidden;
+}
+.banner-img:hover{
+    transform: scale(1.3);
+    transition: 0.7s ease-in-out;
+}
+
+/*----------------
+logo section start 
+------------------*/
+#logo{
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    border: 1px solid#C0CCDA;
+    align-items: center;
+}
+#logo img{
+    width: 85px;
+    height: 25px;
 }
 
 /*----------------
@@ -78,9 +111,6 @@ popular collection start
 ------------------*/
 #popular-collection{
     margin: 100px 0;
-    width: 1050px;
-    margin-left: auto;
-    margin-right: auto;
 }
 #popular-collection h1{
     text-align: center;
@@ -135,4 +165,46 @@ popular collection start
     text-decoration: none;
     color: rgba(224, 44, 109, 0.87);
     font-weight: 700;
+    transition: 0.5s;
+}
+.popular-btn a:hover{
+    color: tomato;
+}
+
+/*----------------
+footer start 
+------------------*/
+footer{
+    background-color: #0a0826;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+footer h3{
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+footer p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #D9DBE1;
+    margin: 5px;
+}
+.footer-icons>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icons>ul>li{
+    list-style: none;
+    margin-right: 35px;
+}
+.footer-icons>ul>li>a{
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.footer-icons>ul>li>a:hover{
+    color: tomato;
 }
