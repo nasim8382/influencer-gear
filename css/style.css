@@ -1,5 +1,5 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* common styles */
 body{
@@ -71,4 +71,61 @@ banner section start
     background-position: center;
     background-repeat: no-repeat;
     background-size: 96%;
+}
+
+/*----------------
+popular collection start 
+------------------*/
+#popular-collection{
+    margin: 100px 0;
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#popular-collection h1{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.popular-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.popular-card{
+    box-shadow: 10px 10px 15px 20px#e9e6e6;
+    padding: 15px;
+    border-radius: 5px;
+}
+.popular-card h2{
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+    margin: 10px 0;
+}
+.popular-card h3{
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 0;
+}
+.popular-card p{
+    font-weight: 700;
+    font-size: 14px;
+    color:  #787885;
+    margin: 0;
+}
+.icon-detail{
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+    align-items: center;
+}
+.star-icon{
+    color: #FB8200;
+    font-size: 12px;
+}
+#popular-btn{
+    text-align: right;
 }
