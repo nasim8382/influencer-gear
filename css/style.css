@@ -172,6 +172,43 @@ popular collection start
 }
 
 /*----------------
+traffic method start 
+------------------*/
+#traffic-method{
+    margin-bottom: 80px;
+    padding-left: 80px;
+}
+#traffic-method h1{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+.method-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.method-card{
+    width: 300px;
+}
+.method-card h3{
+    color: #3d0d53;
+}
+.method-icon-1, .method-icon-2, .method-icon-3{
+    font-size: 50px;
+    background-color: aquamarine;
+    padding: 15px;
+    border-radius: 10px;
+}
+.method-icon-2{
+    background-color: palevioletred;
+}
+.method-icon-3{
+    background-color: tan;
+}
+
+/*----------------
 footer start 
 ------------------*/
 footer{
